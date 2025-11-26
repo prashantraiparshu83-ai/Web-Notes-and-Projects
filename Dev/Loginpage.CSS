@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+#spam{
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 600px;
+    margin-right: 400px;
+    border: solid grey 5px;
+    color: grey;
+    height: 300px;
+    width: 200px;
+}
+
+.underline-on-touch:hover {
+    text-decoration: underline;
+}
+button{
+    background-color: brown;
+    text-emphasis-color: yellow ;
+}

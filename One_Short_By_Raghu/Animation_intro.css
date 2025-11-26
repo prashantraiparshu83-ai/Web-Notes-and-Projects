@@ -1,0 +1,75 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 50px; */
+    align-items: center;
+}
+.static{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    border-radius: 50px;
+}
+ .moving{
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(231, 10, 220);
+   /* border-top: none;
+   */
+    background-color: aquamarine; 
+    border-radius: 50px;
+    transform: rotate(180deg);
+    background-color: rgba(240, 207, 23, 0.947);
+    animation-name:rotator;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+ }
+ @keyframes rotator{
+    /* from */0%{
+        transform: translate(-500px);
+        /* transform: rotate(0);
+        background-color: rgb(64, 23, 197); */
+    }
+    50%{
+        background-color: green;
+        transform: translate(500px);
+    }
+    /* to */
+    100%{
+        transform: translate(-500px);
+        /* transform: rotate(180deg);
+        background-color: rgb(223, 25, 45); */
+    }
+ }
+ .moving:hover{
+    /*transform: scale(2,2);  -> increase view x and y axis 
+     transform: scale(0.2,0.2); 
+     transform: skew(30deg,20deg); 
+     margin-left: 4000px; 
+    transition-delay: 0; time to convert one state to another after 5second
+    transition-duration: 5s;  take 5s after the start to move to the final 
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition: all 5s 1s ease-out  transition-property : all ,tran-duraton:5sec , delay :1sec*/
+    /* transform: rotate(180deg);
+    background-color: rgba(240, 207, 23, 0.947);
+    animation-name:rotator;
+    animation-iteration-count: 5;
+    animation-duration: 5s;
+    animation-timing-function: ease-out; */
+
+ }

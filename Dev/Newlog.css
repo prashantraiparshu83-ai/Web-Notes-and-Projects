@@ -1,0 +1,75 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background: #785216;
+    background: linear-gradient(233deg, rgba(120, 82, 22, 1) 19%, rgba(25, 72, 74, 1) 80%);
+}
+ 
+h3{
+    color: blueviolet;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    
+
+}
+#page{
+    height: 100%;
+    width: 100%;
+} 
+#rectangle{
+    height: 300px;
+    width: 200px;
+    border-radius: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    transform: translate(-50% ,-50%);
+}
+#header h3{
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    background: #a825a6;
+    background: linear-gradient(233deg, rgba(168, 37, 166, 1) 8%, rgba(55, 19, 110, 1) 91%);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#form input[type="text"],input[type="password"] { 
+   
+    width:90%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    border-radius: 50px;
+}
+#form label:hover{
+    color: darksalmon;
+    text-decoration: underline;
+}
+#form button{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(217, 129, 200);
+}
+#form button:hover {
+    
+    background: #a825a6;
+    background: linear-gradient(233deg, rgba(168, 37, 166, 1) 8%, rgba(55, 19, 110, 1) 91%);
+}

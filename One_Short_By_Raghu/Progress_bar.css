@@ -1,0 +1,42 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+#progress {
+    width: 400px;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+#progress_bar1{
+    background-color: aquamarine;
+    padding: 5px;
+    flex-basis: 50%;
+}
+.percentage1{
+    width: 10px;
+    margin: 0 auto;
+    display: block;
+}
+#progress_bar2{
+    background-color: rgb(168, 222, 123);
+    padding: 5px;
+    flex-basis: 70%;
+  
+}
+.percentage2{
+    width: 10px;
+    margin: 0 auto;
+    display: block;
+    
+}

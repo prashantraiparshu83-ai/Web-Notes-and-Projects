@@ -1,0 +1,184 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+*,*::after,*::before{
+box-sizing: inherit;
+}
+.loader1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 30px;
+}
+.loader1 > div{
+    border: 5px solid red;
+    width: 5rem;
+    height: 5rem;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spinner1 4s linear infinite;/* name ,duration-timing-function,delay ,iteration*/
+    animation-direction: alternate;
+   
+}
+@keyframes spinner1{
+    form{
+        transform:rotate(0);
+
+    }
+    to{
+        transform:rotate(360deg) ;
+    }
+}
+.loader2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+.loader2 > div{
+     border: 5px solid red;
+    width: 5rem;
+    height: 5rem;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    animation: spinner2 4s linear infinite;/* name ,duration-timing-function,delay ,iteration*/
+    /* animation-direction: alternate; */
+}
+@keyframes spinner2{
+    form{
+        transform:rotate(0);
+
+    }
+    to{
+        transform:rotate(360deg) ;
+    }
+}
+.spacer{
+    height: 120px;
+}
+.loader3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 5rem;
+}
+.loader3 div{
+    background-color: red;
+    height: 100px;
+    width: 30px;
+}
+.loader3 .first{
+    animation: expander 0.8s  linear infinite ;
+    animation-delay: 0.4s;
+}
+.loader3 .second{
+    animation: expander 0.8s linear infinite ;
+    animation-delay: 0.6s;
+}
+.loader3 .third{
+    animation: expander 0.8s  linear infinite ;
+    animation-delay: 0;
+}
+@keyframes expander{
+    0%{
+        height: 100px;
+    }
+    50%{
+        height: 150px;
+
+    }
+    100%{
+        height: 100px;
+    }
+
+}
+
+.loader4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 5rem;
+}
+.loader4 > div{
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid gray;
+    border-radius: 50%;
+    animation: drop 2s linear infinite;
+}
+@keyframes drop{
+    0%{
+        width: 2rem;
+        height: 2rem;
+        border-color: rgb(216, 79, 107);
+        opacity: 0;
+    }
+    4.5%{ 
+        width: 2rem;
+        height: 2rem;
+        border-color: gray;
+        opacity: 0;
+    }
+    5%{
+        width: 2rem;
+        height: 2rem;
+        border-color: gray;
+        opacity: 1;
+    }
+    
+    35%{ 
+        opacity: 0;
+    }
+    50%{
+        width: 3rem;
+        height: 3rem;
+        border-color: gray;
+        opacity: 1;
+    }
+     53%{
+        width: 3rem;
+        height: 3rem;
+        border-color: gray;
+        opacity: 1;
+    }
+    54%{
+        width: 3rem;
+        height: 3rem;
+        border-color: gray;
+        opacity: 0;
+    }
+    75%{
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: gray;
+        opacity: 1;
+    }
+    79%{
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: gray;
+        opacity: 1;
+    }
+    80%{ 
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: gray;
+        opacity: 0;
+    }
+    100%{
+        width: 2rem;
+        height: 2rem;
+        border-color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+}

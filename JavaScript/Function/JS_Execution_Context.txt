@@ -1,0 +1,8 @@
+            Javascript Execution Context
+            {} = Global Execution Context = Context refere to the 'this' variable
+function Execution Context
+Eval Execution Context
+
+{} = this code execute in two phases
+1. Memory Execution phases
+2. Execution phases

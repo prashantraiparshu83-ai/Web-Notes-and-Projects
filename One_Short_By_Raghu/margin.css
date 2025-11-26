@@ -1,0 +1,13 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body,html{
+    height: auto;
+    width: auto;
+}
+h1{
+    margin: 400px;
+    background-color: blueviolet;
+    padding: 10px;
+}
